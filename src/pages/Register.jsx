@@ -12,7 +12,10 @@ const Register = () => {
                 <input type='email' placeholder='Email'/>
                 <input type='password' placeholder='Password'/>
                 <input required style={{ display: "none" }} type="file" id="file" />
-                <label htmlFor='file'>asd</label>
+                <label htmlFor='file'>
+                    <img src='https://icons-for-free.com/iconfiles/png/512/gallery+image+landscape+mobile+museum+open+line+icon-1320183049020185924.png' alt="logo" />
+                    <span>Add an avatar</span>
+                </label>
                 <button>Sign up</button>
             </form>
             <p>Have already an account? <span>Login</span></p>
