@@ -4,14 +4,16 @@ import { auth, storage, db } from '../firebase';
 import '../style.scss'
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import { doc,setDoc } from 'firebase/firestore';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [err, setErr] = useState(false);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    setLoading(true);
+    e.preventDefault();
     const displayName = e.target[0].value;
     const email = e.target[1].value;
     const password = e.target[2].value;
@@ -43,16 +45,16 @@ const Register = () => {
 
             //create empty user chats on firestore
             await setDoc(doc(db, "userChats", res.user.uid), {});
-            navigate("/");
-
           } catch (err) {
             console.log(err);
             setErr(true);
+            setLoading(false);
           }
         });
       });
     } catch (err) {
       setErr(true);
+      setLoading(false);
     }
   };
 
