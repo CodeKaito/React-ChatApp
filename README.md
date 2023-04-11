@@ -4,7 +4,7 @@ This is a realtime private chat application that is built with ReactJS and Fireb
 
 ## Installation
 
-1. Clone this repository to your local machine using `https://github.com/<username>/<repository-name>.git`
+1. Clone this repository to your local machine using `https://github.com/CodeKaito/React-ChatApp`
 2. Install all necessary packages by running `npm install` in your terminal.
 3. Create a new Firebase project and obtain your Firebase credentials.
 4. Create a `.env` file in the root directory of the project and put your Firebase credentials in this file as follows:
