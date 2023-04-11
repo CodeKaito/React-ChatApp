@@ -1,72 +1,43 @@
-# Getting Started with Create React App.
+# Realtime Private Chat Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a realtime private chat application that is built with ReactJS and Firebase as the database. This application allows users to have private conversations in real time with other users who have a unique username and password.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+1. Clone this repository to your local machine using `https://github.com/<username>/<repository-name>.git`
+2. Install all necessary packages by running `npm install` in your terminal.
+3. Create a new Firebase project and obtain your Firebase credentials.
+4. Create a `.env` file in the root directory of the project and put your Firebase credentials in this file as follows:
 
-### `npm start`
+```
+REACT_APP_FIREBASE_API_KEY=YOUR_API_KEY
+REACT_APP_FIREBASE_AUTH_DOMAIN=YOUR_AUTH_DOMAIN
+REACT_APP_FIREBASE_DATABASE_URL=YOUR_DATABASE_URL
+REACT_APP_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
+REACT_APP_FIREBASE_STORAGE_BUCKET=YOUR_STORAGE_BUCKET
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=YOUR_MESSAGING_SENDER_ID
+REACT_APP_FIREBASE_APP_ID=YOUR_APP_ID
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5. Run the development server by running `npm start` in your terminal.
+6. Access the application by navigating to `http://localhost:3000` in your web browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Users can sign up for the application with a unique username and password.
+- Users can create a private conversation with other users by inputting their usernames.
+- Users can send and receive messages in real time.
+- Users can see the list of all the available conversations they have.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With
 
-### `npm run build`
+- ReactJS
+- Firebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contributions are welcome. Please open an issue or pull request for any changes you wish to make.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App..
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify.
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-............
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
